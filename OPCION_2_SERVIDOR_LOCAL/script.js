@@ -882,6 +882,10 @@ function generateEvaluationRecommendations(results) {
     }
     
     console.log('Generando retroalimentación para resultados:', results);
+    console.log('Container encontrado:', container);
+    
+    // Asegurar que el contenedor esté visible
+    container.style.display = 'block';
     
     // Generar recomendaciones personalizadas
     
@@ -980,6 +984,13 @@ function generateEvaluationRecommendations(results) {
     try {
         container.innerHTML = fullFeedbackHTML;
         console.log('Retroalimentación generada exitosamente');
+        console.log('HTML insertado, longitud:', fullFeedbackHTML.length);
+        
+        // Forzar scroll hacia la retroalimentación
+        setTimeout(() => {
+            container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+        
     } catch (error) {
         console.error('Error insertando HTML de retroalimentación:', error);
         container.innerHTML = `
@@ -1233,13 +1244,27 @@ function analyzeErrorPatterns() {
 }
 
 function showFeedbackInterface(results) {
+    console.log('showFeedbackInterface llamado con:', results);
+    
     // Mostrar interfaz de retroalimentación
     const container = document.getElementById('quizResults');
     const scoreDisplay = document.getElementById('finalScore');
     
-    if (scoreDisplay) scoreDisplay.textContent = `${results.totalScore}`;
+    console.log('quizResults container:', container);
+    console.log('finalScore element:', scoreDisplay);
+    
+    if (scoreDisplay) {
+        scoreDisplay.textContent = `${results.totalScore}`;
+        console.log('Score actualizado a:', results.totalScore);
+    }
+    
+    if (container) {
+        container.style.display = 'block';
+        console.log('Container quizResults mostrado');
+    }
     
     // Generar recomendaciones de evaluación
+    console.log('Llamando generateEvaluationRecommendations...');
     generateEvaluationRecommendations(results);
 }
 
@@ -1426,7 +1451,11 @@ function finishQuiz() {
             progressFill.classList.add('completed');
         }
         
+        console.log('Generando feedback final...');
         const results = generateFeedback();
+        console.log('Results generados:', results);
+        
+        console.log('Llamando showFeedbackInterface...');
         showFeedbackInterface(results);
         
         const quizQuestion = document.querySelector('.quiz-question');
