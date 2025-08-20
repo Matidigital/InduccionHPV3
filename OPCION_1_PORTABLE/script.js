@@ -1678,6 +1678,48 @@ function initialize() {
 // ===== EVENTOS =====
 document.addEventListener('DOMContentLoaded', initialize);
 
+// ===== FUNCIONES MÓVILES =====
+
+function toggleMobileMenu() {
+    const sidebar = document.querySelector('.sidebar');
+    const overlay = document.querySelector('.sidebar-overlay');
+    
+    if (sidebar && overlay) {
+        sidebar.classList.toggle('active');
+        overlay.classList.toggle('active');
+        
+        // Prevenir scroll del body cuando el menú está abierto
+        if (sidebar.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    }
+}
+
+function closeMobileMenu() {
+    const sidebar = document.querySelector('.sidebar');
+    const overlay = document.querySelector('.sidebar-overlay');
+    
+    if (sidebar && overlay) {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
+// Cerrar menú móvil cuando se selecciona una sección
+function handleNavClick(e) {
+    e.preventDefault();
+    const sectionId = this.getAttribute('data-section');
+    showSection(sectionId);
+    
+    // Cerrar menú móvil después de navegar
+    if (window.innerWidth <= 1024) {
+        closeMobileMenu();
+    }
+}
+
 // ===== EXPONER FUNCIONES GLOBALES =====
 window.showSection = showSection;
 window.saveReflection = saveReflection;
@@ -1705,3 +1747,5 @@ window.previousQuizQuestion = previousQuizQuestion;
 window.finishQuiz = finishQuiz;
 window.createFinalQuiz = createFinalQuiz;
 window.resetDragDropExercise = resetDragDropExercise;
+window.toggleMobileMenu = toggleMobileMenu;
+window.closeMobileMenu = closeMobileMenu;

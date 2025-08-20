@@ -39,6 +39,9 @@
     <nav class="navbar hpv-glass-card-premium">
         <div class="nav-container">
             <div class="nav-brand">
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
                 <img src="logo.jpeg" alt="Programa Habilidades para la Vida III" class="logo hpv-logo-glow hpv-breathe">
                 <div class="brand-text">
                     <h1>Manual de Inducción General</h1>
@@ -54,6 +57,9 @@
         </div>
     </nav>
 
+    <!-- Overlay para cerrar menú móvil -->
+    <div class="sidebar-overlay" onclick="closeMobileMenu()"></div>
+    
     <aside class="sidebar hpv-glass-card">
         <div class="sidebar-content">
             <h3>Contenidos</h3>
