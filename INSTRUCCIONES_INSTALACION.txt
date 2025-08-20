@@ -1,0 +1,44 @@
+INSTRUCCIONES DE INSTALACIÓN - MANUAL HPV III
+============================================
+
+¡INSTALACIÓN EN 30 SEGUNDOS!
+
+OPCIÓN 1 - PORTABLE (MÁS FÁCIL):
+1. Descomprimir este archivo ZIP
+2. Ir a carpeta "OPCION_1_PORTABLE" 
+3. Hacer DOBLE-CLICK en "ABRIR_MANUAL_HPV3.bat"
+4. ¡LISTO! El manual se abre automáticamente
+
+OPCIÓN 2 - SERVIDOR LOCAL (MÁS POTENTE):
+1. Descomprimir este archivo ZIP
+2. Ir a carpeta "OPCION_2_SERVIDOR_LOCAL"
+3. Hacer DOBLE-CLICK en "INICIAR_SERVIDOR_HPV3.bat"
+4. ¡LISTO! Se abre en http://localhost:8000
+
+SOLUCIÓN DE PROBLEMAS RÁPIDA:
+- Si no se abre: Ejecutar como administrador
+- Si Python no encontrado: Usar OPCIÓN 1 PORTABLE  
+- Si se ve mal: Presionar F11 (pantalla completa)
+- Si quiz no funciona: Presionar F5 (actualizar)
+
+DOCUMENTACIÓN COMPLETA:
+- Leer "INICIO_RAPIDO.md" para guía detallada
+- Consultar "FAQ_Problemas_Comunes.md" si hay issues
+- Ver "Guia_Visual_Instalacion.md" para capturas
+
+REQUISITOS MÍNIMOS:
+- Windows 7 o superior
+- Navegador moderno (Chrome/Edge/Firefox)
+- 5MB espacio libre
+- Resolución mínima 1024x768
+
+NO REQUIERE:
+- Conexión a internet (funciona offline)
+- Instalación de software adicional
+- Conocimientos técnicos
+- Permisos especiales de administrador
+
+TIEMPO TOTAL: 75-105 minutos para capacitación completa
+
+¡Cualquier problema? Lee la documentación incluida.
+============================================

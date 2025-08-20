@@ -1,0 +1,71 @@
+MANUAL INTERACTIVO HPV III - INFORMACIÓN DE VERSIÓN
+===================================================
+
+VERSIÓN: 2.0 (Entrega Final)
+FECHA: 20 de Diciembre 2024
+DESARROLLADO PARA: JUNAEB - Programa Habilidades para la Vida III
+
+CARACTERÍSTICAS PRINCIPALES:
+- Manual interactivo 100% funcional offline
+- Progreso visual de 0% a 100%
+- Quiz final con retroalimentación personalizada
+- 2 opciones de instalación súper fáciles
+- Compatible con Chrome, Edge, Firefox
+- Funciona en Windows 10/11/7/8
+- Documentación exhaustiva incluida
+
+CONTENIDO EDUCATIVO:
+- 8 secciones principales del programa HPV III
+- 10 preguntas de evaluación final
+- Ejercicios interactivos de arrastrar y soltar
+- Casos prácticos con análisis experto
+- Reflexiones personales guardables
+- Galería de imágenes del programa
+
+OPCIONES DE INSTALACIÓN:
+1. PORTABLE: Un solo click, sin instalación
+2. SERVIDOR LOCAL: Máxima compatibilidad con Python/Node.js
+
+TESTING REALIZADO:
+- Funcionalidad completa verificada
+- Múltiples navegadores probados
+- Diferentes sistemas operativos validados
+- Resoluciones diversas soportadas
+- Manejo de errores implementado
+
+ARCHIVOS INCLUIDOS:
+- Manual completo (HTML, CSS, JavaScript)
+- Scripts de instalación automática (.bat)
+- Documentación completa (README, FAQ, Guías)
+- Recursos multimedia (imágenes, logo)
+- Reporte de testing exhaustivo
+
+COMPATIBILIDAD GARANTIZADA:
+✓ Google Chrome 90+
+✓ Microsoft Edge 90+ 
+✓ Mozilla Firefox 90+
+✓ Windows 10/11 (nativo)
+✓ Windows 7/8 (con navegadores actualizados)
+✓ Resoluciones desde 1024x768
+
+TAMAÑO TOTAL DEL PAQUETE: ~5MB
+TIEMPO DE CAPACITACIÓN: 75-105 minutos
+NIVEL TÉCNICO REQUERIDO: Ninguno (usuario final)
+
+SOPORTE:
+- FAQ exhaustivo incluido
+- Guías visuales paso a paso
+- Soluciones para problemas comunes
+- Contacto soporte técnico JUNAEB
+
+PRÓXIMAS VERSIONES (FUTURAS):
+- Sistema de login para persistencia
+- Certificados PDF automáticos
+- Versión mobile nativa
+- Analytics de uso
+- Integración con SIGE
+
+===================================================
+© 2024 JUNAEB - Programa Habilidades para la Vida III
+27 años de experiencia en intervención psicosocial escolar
+===================================================
